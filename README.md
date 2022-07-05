@@ -4,6 +4,8 @@ Displays album art of currently playing songs from Spotify on Pixoo 64 screen.
 - Like mentioned before, when run, this displays album art of a currently playing song from Spotify on the Pixoo 64's screen.
 - Also, in the bottom right hand corner, the time in am/pm format is shown.
 
+![IMG_1273](https://user-images.githubusercontent.com/69360468/177284241-7aea67e1-a964-46ca-bd01-9ad7c881a8cd.jpeg)
+
 Setup:
 - Navigate to the "main.py" file
 - Replace PIXOO64-IP-ADDRESS with your Pixoo 64's ip address
