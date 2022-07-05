@@ -1,10 +1,10 @@
 import os
+import sys
+import requests
+from types import NoneType
+from pprint import pprint
 import time
 from datetime import datetime
-from types import NoneType
-import requests
-import sys
-from pprint import pprint
 from PIL import Image
 from io import BytesIO
 from spotipy.oauth2 import SpotifyClientCredentials
