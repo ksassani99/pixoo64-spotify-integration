@@ -18,12 +18,12 @@ clSEC = "SPOTIFY-CLIENT-SECRET"
 rURI = "SPOTIFY-CLIENT-URI"
 scope = "user-read-playback-state"
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=clID, client_secret=clSEC, redirect_uri=rURI, scope=scope))
-playTr = sp.current_playback()
-
 pixoo = Pixoo(ipAdd, 64, False)
 
 def getCurrTrkImg():
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=clID, client_secret=clSEC, redirect_uri=rURI, scope=scope))
+    playTr = sp.current_playback()
+
     imgURL = playTr["item"]["album"]["images"][2]["url"]
     response = requests.get(imgURL)
     img = Image.open(BytesIO(response.content))
@@ -31,6 +31,9 @@ def getCurrTrkImg():
     return img
 
 def checkPlay():
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=clID, client_secret=clSEC, redirect_uri=rURI, scope=scope))
+    playTr = sp.current_playback()
+
     if playTr is None:
         isPlaying = False
     else:
@@ -39,6 +42,9 @@ def checkPlay():
     return isPlaying
 
 def checkPod():
+    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=clID, client_secret=clSEC, redirect_uri=rURI, scope=scope))
+    playTr = sp.current_playback()
+
     checkPodPlay = playTr["currently_playing_type"]
 
     if checkPodPlay == "episode":
@@ -58,8 +64,6 @@ def showTime():
     currtimem = now.strftime("%M")
     pixoo.draw_text(currtimeh, (45, 57), (255, 255, 255))
     pixoo.draw_text(currtimem, (55, 57), (255, 255, 255))
-
-    pixoo.push()
 
 def main():
     fallbackImg = "NotPlaying.png"
