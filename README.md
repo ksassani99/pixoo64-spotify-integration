@@ -17,6 +17,6 @@ Additional Things to Note:
 - This program can't currently display art from podcast episodes, as such if a podcast episode from Spotify is played, a placeholder image will be shown
 
 Credits:
-- This project utilizes the Spotipy and the SomethingWithComputers Pixoo Python library
+- This project utilizes the Spotipy Python library and the SomethingWithComputers Pixoo Python library
 - Spotipy library: https://github.com/plamere/spotipy
-- Pioo library: https://github.com/SomethingWithComputers/pixoo
+- Pixoo library: https://github.com/SomethingWithComputers/pixoo
