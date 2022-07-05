@@ -12,6 +12,8 @@ from spotipy.oauth2 import SpotifyOAuth
 import spotipy
 from pixoo import Channel, ImageResampleMode, Pixoo
 
+#Change variables below (ipAdd, clID, clSEC, rURI)
+
 ipAdd = 'PIXOO64-IP-ADDRESS'
 clID = "SPOTIFY-CLIENT-ID"
 clSEC = "SPOTIFY-CLIENT-SECRET"
