@@ -15,3 +15,8 @@ Additional Things to Note:
 - If the program is first run without a song currently playing from Spotify, a placeholder image will be shown until a song is played
 - If playback of a song is stopped, the program will still display the most recent album art of the last song played on the Pixoo screen
 - This program can't currently display art from podcast episodes, as such if a podcast episode from Spotify is played, a placeholder image will be shown
+
+Credits:
+- This project utilizes the Spotipy and the SomethingWithComputers Pixoo Python library
+- Spotipy library: https://github.com/plamere/spotipy
+- Pioo library: https://github.com/SomethingWithComputers/pixoo
